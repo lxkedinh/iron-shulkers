@@ -2,6 +2,7 @@ package com.ironshulkers;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,5 +19,10 @@ public class IronShulkers implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+		ModBlocks.registerAllBlocks();
+	}
+
+	public static Identifier createIdentifier(String name) {
+		return new Identifier("iron_shulkers", name);
 	}
 }

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "iron_shulkers:block/iron_shulker_box"
+  }
+}
+
