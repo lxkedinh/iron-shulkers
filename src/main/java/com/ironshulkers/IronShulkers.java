@@ -1,5 +1,7 @@
 package com.ironshulkers;
 
+import com.ironshulkers.entity.ModEntities;
+import com.ironshulkers.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.util.Identifier;
@@ -17,9 +19,9 @@ public class IronShulkers implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
-
-		LOGGER.info("Hello Fabric world!");
-		ModBlocks.registerAllBlocks();
+		ModBlocks.registerBlocks();
+		ModItems.registerItems();
+		ModEntities.registerEntities();
 	}
 
 	public static Identifier createIdentifier(String name) {
